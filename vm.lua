@@ -958,7 +958,7 @@ handlers["clinto"] = function()
 end
 
 -- basically pop that instead of giving stack overflow it just returns a boolean if it succeeded
--- it uses the r8 register as then value to put the boolean into
+-- it uses the r8 register as the value to put the boolean into
 handlers["tpop"] = function(v)
     if #data.stack <= 0 then
         data.vars.r8 = false
